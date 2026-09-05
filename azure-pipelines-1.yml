@@ -3,7 +3,7 @@ trigger:
 
 variables:
   var1: "Raham"
-  var2: "Shaik"
+  var2: "SHaik"
 
 pool:
   name: myone
