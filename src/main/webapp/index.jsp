@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>NexusShop — Modern E‑Commerce</title>
+    <title>NexusShop — Premium Shopping Experience</title>
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -1116,6 +1116,119 @@
                 font-size: 13px;
             }
         }
+
+        /* ========== PREMIUM UI ENHANCEMENTS ========== */
+        :root{
+            --premium-bg:#f6f7fb;
+            --premium-dark:#0b1020;
+            --premium-card:rgba(255,255,255,.88);
+            --premium-border:rgba(15,23,42,.08);
+            --premium-blue:#635bff;
+            --premium-purple:#8b5cf6;
+        }
+        body{
+            background:
+              radial-gradient(circle at 0% 0%,rgba(99,91,255,.08),transparent 28rem),
+              radial-gradient(circle at 100% 20%,rgba(224,122,95,.08),transparent 30rem),
+              var(--premium-bg);
+        }
+        header{
+            background:rgba(255,255,255,.78);
+            border-bottom:1px solid var(--premium-border);
+            box-shadow:0 10px 30px rgba(15,23,42,.04);
+        }
+        .brand{letter-spacing:-.8px}
+        .brand i{
+            width:42px;height:42px;border-radius:14px;display:grid;place-items:center;
+            color:#fff;background:linear-gradient(135deg,var(--premium-blue),var(--accent));
+            font-size:18px;box-shadow:0 10px 24px rgba(99,91,255,.22);
+        }
+        nav.main-nav li a{border:1px solid transparent}
+        nav.main-nav li a:hover,nav.main-nav li a.active{
+            background:#fff;border-color:var(--premium-border);
+            box-shadow:0 8px 20px rgba(15,23,42,.05);
+        }
+        .search-wrap{
+            background:#fff;border:1px solid var(--premium-border);
+            box-shadow:0 6px 20px rgba(15,23,42,.04);
+        }
+        .header-actions .icon-btn{
+            background:#fff;border:1px solid var(--premium-border);
+            box-shadow:0 5px 16px rgba(15,23,42,.04);
+        }
+        .hero{
+            min-height:540px;border-radius:28px;
+            background:linear-gradient(120deg,#080d1b 0%,#151b36 52%,#31235d 100%);
+            box-shadow:0 28px 70px rgba(12,18,40,.22);
+        }
+        .hero::after{
+            content:'';position:absolute;width:460px;height:460px;right:-100px;top:-120px;
+            border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.38),transparent 65%);
+            z-index:0;
+        }
+        .hero .badge{
+            background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);
+            color:#ffd2c7;backdrop-filter:blur(10px);
+        }
+        .hero h1{font-size:clamp(42px,5vw,66px);letter-spacing:-2px}
+        .hero p{font-size:18px}
+        .btn{box-shadow:0 8px 20px rgba(15,23,42,.08)}
+        .btn-primary{
+            background:linear-gradient(135deg,var(--accent),#f29b82);
+            border-color:transparent;
+        }
+        .btn-primary:hover{
+            background:linear-gradient(135deg,#d96547,#ee8a6d);
+        }
+        .section-header .title-group h2{font-size:32px;letter-spacing:-1px}
+        .cat-card,.product-card,.testimonial-card,.deal-wrap{
+            border:1px solid var(--premium-border);
+            background:var(--premium-card);
+            backdrop-filter:blur(14px);
+        }
+        .cat-card{border-radius:20px}
+        .cat-card:hover{border-color:rgba(99,91,255,.22);transform:translateY(-8px)}
+        .cat-card .icon-wrap{
+            border-radius:18px;
+            background:linear-gradient(135deg,rgba(224,122,95,.18),rgba(99,91,255,.12));
+        }
+        .product-card{border-radius:22px}
+        .product-card .img-wrap{background:#eef0f6}
+        .product-card .wish-btn{box-shadow:0 8px 18px rgba(15,23,42,.12)}
+        .product-card .body{padding:18px 20px 14px}
+        .product-card .footer{padding:0 20px 20px}
+        .product-card .footer .add-btn{
+            border-radius:14px;background:linear-gradient(135deg,#11182c,#252a42);
+        }
+        .product-card .footer .add-btn:hover{
+            background:linear-gradient(135deg,var(--premium-blue),var(--premium-purple));
+        }
+        .deal-wrap{border-radius:26px;box-shadow:0 20px 55px rgba(15,23,42,.08)}
+        .deal-wrap .deal-content{
+            background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(246,247,251,.95));
+        }
+        .timer-box{
+            border-radius:14px;
+            background:linear-gradient(135deg,#11182c,#2a2145);
+            box-shadow:0 10px 20px rgba(15,23,42,.12);
+        }
+        .newsletter-wrap{
+            border-radius:26px;
+            background:linear-gradient(135deg,#0b1020,#1c2242 55%,#362361);
+            box-shadow:0 22px 60px rgba(11,16,32,.18);
+        }
+        .newsletter-wrap form input{
+            background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.12);
+        }
+        footer{margin-top:30px}
+        .socials a{border:1px solid var(--premium-border)}
+        @media(max-width:768px){
+            .hero{min-height:440px;border-radius:22px}
+            .hero h1{font-size:38px}
+            .section-header .title-group h2{font-size:27px}
+            .brand i{width:36px;height:36px}
+        }
+
     </style>
 </head>
 
